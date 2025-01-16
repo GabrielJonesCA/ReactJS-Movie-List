@@ -1,11 +1,17 @@
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <div></div>
+    <>
+      <Text display="hello"/>
+      <Text display= "whats up"/>
+    </>
   )
 }
-
+function Text({display}) {
+  return <div>
+    <p>{display}</p>
+  </div>
+}
 export default App
